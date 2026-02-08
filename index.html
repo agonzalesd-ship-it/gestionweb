@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Información Comunitaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #eef5f2;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+                  url("img/campo.jpg") center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      color: #2f6f5e;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+    }
+
+    .img-section {
+      border-radius: 15px;
+      max-height: 280px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* FOTO GRUPAL */
+    .team-card {
+      background: white;
+      border-radius: 20px;
+      padding: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.15);
+      max-width: 420px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .team-card img {
+      border-radius: 15px;
+      width: 100%;
+    }
+
+    footer {
+      background-color: #2f6f5e;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#2f6f5e;">
+  <div class="container">
+    <a class="navbar-brand" href="#">Gestión Comunitaria</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="#proyecto">Proyecto</a>
+      <a class="nav-link" href="#diagnostico">Diagnóstico</a>
+      <a class="nav-link" href="#empadronamiento">Empadronamiento</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PORTADA -->
+<section class="hero">
+  <h1 class="display-5 fw-bold">Gestión de Información Comunitaria</h1>
+  <p class="lead">Empoderamiento Digital – Caserío San Miguel, Monsefú</p>
+</section>
+
+<div class="container my-5">
+
+  <!-- PRESENTACIÓN -->
+  <div id="proyecto" class="card mb-5 shadow p-4">
+    <h3 class="section-title">Presentación del Proyecto</h3>
+    <p>
+      El proyecto <strong>Gestión de Información Comunitaria y Empoderamiento Digital</strong>
+      tiene como finalidad implementar un sistema de empadronamiento digital que
+      permita recopilar información confiable de la población del Caserío San Miguel,
+      fortaleciendo la organización comunitaria y facilitando gestiones formales
+      ante las autoridades.
+    </p>
+
+    <!-- Imagen representativa (sutil) -->
+    <img src="img/campo.jpg" class="img-section mt-3" alt="Contexto comunitario">
+  </div>
+
+  <!-- DIAGNÓSTICO -->
+  <div id="diagnostico" class="card mb-5 shadow p-4">
+    <h3 class="section-title">Diagnóstico del Problema</h3>
+    <p>
+      El Caserío San Miguel presenta limitaciones en la gestión de información
+      comunitaria debido al uso de registros manuales y dispersos, lo cual dificulta
+      la elaboración de documentos técnicos y la atención oportuna de necesidades
+      relacionadas con servicios básicos.
+    </p>
+
+    <!-- Foto del caserío (aquí sí encaja) -->
+    <img src="img/caserio.jpg" class="img-section mt-3" alt="Realidad del caserío">
+  </div>
+
+  <!-- FOTO GRUPAL -->
+  <div class="mb-5">
+    <div class="team-card">
+      <h5 class="section-title">Equipo de Trabajo</h5>
+      <img src="img/fotogrupal.jpg" alt="Equipo del proyecto">
+      <p class="mt-2 mb-0 text-muted" style="font-size: 14px;">
+        Trabajo de campo y apoyo comunitario
+      </p>
+    </div>
+  </div>
+
+  <!-- EMPADRONAMIENTO -->
+  <div id="empadronamiento" class="card mb-5 shadow p-4 text-center">
+    <h3 class="section-title">Empadronamiento Digital</h3>
+    <p>
+      El empadronamiento digital permite registrar información básica de las familias
+      del caserío, la cual será utilizada exclusivamente para la elaboración de
+      documentos formales y sustentar proyectos ante las autoridades competentes.
+    </p>
+
+    <!-- Imagen correcta para esta sección -->
+    <img src="img/empadronamiento.jpg" class="img-section my-3" alt="Empadronamiento digital">
+
+    <a href="https://docs.google.com/forms/d/1Dx_EBGfLTOEklNZgGCuz5-oRwCiKA5pQdT5yQM7Mu3Q/viewform"
+       target="_blank"
+       class="btn btn-success btn-lg mt-3">
+      Registrarse / Empadronarse
+    </a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  <p class="mb-0">
+    Proyecto Académico – Gestión de Información Comunitaria<br>
+    Caserío San Miguel – Monsefú
+  </p>
+</footer>
+
+</body>
+</html>
