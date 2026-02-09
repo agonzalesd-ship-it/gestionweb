@@ -17,12 +17,12 @@
       background-image: url("campo.jpg");
       background-size: cover;
       background-position: center;
-      padding: 80px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.65);
       display: inline-block;
       padding: 15px 25px;
       border-radius: 10px;
@@ -30,12 +30,12 @@
 
     main {
       padding: 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
 
     section {
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.45);
       padding: 20px;
       margin-bottom: 30px;
       border-radius: 15px;
@@ -46,11 +46,32 @@
       color: #c8e6c9;
     }
 
-    section img {
+    /* 🔹 IMÁGENES CONTROLADAS */
+    .img-seccion {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
       display: block;
-      max-width: 100%;
       margin: 15px auto;
       border-radius: 12px;
+    }
+
+    /* 🔹 BOTÓN FORMULARIO */
+    .btn-formulario {
+      display: block;
+      width: fit-content;
+      margin: 25px auto;
+      padding: 12px 25px;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .btn-formulario:hover {
+      background-color: #1b5e20;
     }
 
     footer {
@@ -65,7 +86,10 @@
 <body>
 
   <header>
-    <h1>Gestión de Información Comunitaria<br>Caserío San Miguel</h1>
+    <h1>
+      Gestión de Información Comunitaria<br>
+      Caserío San Miguel
+    </h1>
   </header>
 
   <main>
@@ -75,28 +99,37 @@
       <p>
         El caserío San Miguel presenta dificultades en la recopilación y
         organización de información comunitaria, lo que limita la toma
-        de decisiones y la elaboración de documentos formales.
+        de decisiones y la elaboración de documentos formales ante las autoridades.
       </p>
-      <img src="caserio.jpg" alt="Caserío San Miguel">
+      <img src="caserio.jpg" alt="Caserío San Miguel" class="img-seccion">
     </section>
 
     <section>
       <h2>Empadronamiento Digital</h2>
       <p>
         El empadronamiento digital permite recopilar datos de manera ordenada,
-        rápida y segura, facilitando el análisis y la elaboración de documentos
-        oficiales para las autoridades.
+        rápida y segura, facilitando el análisis estadístico y la elaboración
+        de documentos técnicos que respalden la gestión comunal.
       </p>
-      <img src="empadronamiento.jpg" alt="Empadronamiento digital">
+
+      <!-- 🔹 BOTÓN AL FORMULARIO -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTnTkcqvkJe3PiXrYHdfraBl2OllcsrK9zOLTZ4ekY1EOHfw/viewform?usp=header"
+         target="_blank"
+         class="btn-formulario">
+        Acceder al Formulario de Empadronamiento
+      </a>
+
+      <img src="empadronamiento.jpg" alt="Empadronamiento digital" class="img-seccion">
     </section>
 
     <section>
       <h2>Equipo del Proyecto</h2>
       <p>
-        Grupo responsable del desarrollo del sistema de gestión de información
-        comunitaria, comprometido con la innovación y el desarrollo local.
+        Equipo responsable del desarrollo del sistema web de empadronamiento,
+        conformado por estudiantes comprometidos con la innovación social y
+        el fortalecimiento de la gestión comunitaria.
       </p>
-      <img src="fotogrupal.jpg" alt="Equipo del proyecto">
+      <img src="fotogrupal.jpg" alt="Equipo del proyecto" class="img-seccion">
     </section>
 
   </main>
@@ -107,3 +140,4 @@
 
 </body>
 </html>
+
